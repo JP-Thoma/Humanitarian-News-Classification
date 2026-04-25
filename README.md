@@ -88,4 +88,4 @@ This implementation prioritises simplicity and transparency over completeness:
 - The NewsAPI free tier limits the number and coverage of retrievable articles
 
 ## Summary
-The pipeline demonstrates a pragmatic approach to collecting and structuring humanitarian news data. It balances simplicity, reproducibility and relevance to MSF operations while remaining transparent about its assumptions and limitations.
+The pipeline demonstrates a pragmatic approach to collecting and structuring humanitarian news data. It balances simplicity, reproducibility, and relevance to MSF operations while remaining transparent about its assumptions and limitations.
