@@ -83,7 +83,7 @@ This implementation prioritises simplicity and transparency over completeness:
 
 - Keyword-based retrieval may miss news articles and add irrelevant articles
 - Country detection relies on explicit mentions and may miss regional references (e.g. “Sahel”, “West Africa”)
-- Zero-shot classification may introduce noise or misclassification in ambiguous cases
+- Article classification is performed using a zero-shot classification model, which assigns categories based on semantic similarity between article text and predefined labels. The labels are designed to reflect primary drivers of medical need (e.g. conflict, disease, displacement), and include descriptive context to improve classification performance. As classification is single-label and based on semantic similarity, articles involving multiple overlapping drivers (e.g. conflict-induced displacement leading to disease outbreaks) may be assigned to only one dominant category.
 - Sentiment models are not tailored to humanitarian reporting and may oversimplify nuanced language
 - The NewsAPI free tier limits the number and coverage of retrievable articles
 
