@@ -61,8 +61,8 @@ This implementation prioritises simplicity and transparency over completeness:
 - Keyword-based retrieval may miss news articles and add irrelevant articles.
 - Filtering by English-language articles excludes relevant news in other (local) languages.
 - Country detection relies on explicit mentions and may miss regional references (e.g. “Sahel”, “West Africa”).
-- Article classification is performed using a zero-shot classification model, which assigns categories based on semantic similarity between article text and predefined labels. The labels are designed to reflect primary drivers of medical need (e.g. conflict, disease, displacement), and include descriptive context to improve classification performance. As classification is single-label and based on semantic similarity, articles involving multiple overlapping drivers (e.g. conflict-induced displacement leading to disease outbreaks) may be assigned to only one dominant category.
-- Sentiment analysis is performed using a pre-trained transformer model that provides three classes (positive, neutral, negative). This avoids the need for heuristic thresholding and allows neutral sentiment to be explicitly modelled. While the model is trained on social media data, it provides a reasonable approximation for general news text but is not tailored to humanitarian reporting and may oversimplify nuanced language.
+- Zero-shot classification assigns a humanitarian category based on semantic similarity, potentially missing overlapping drivers.
+- A pre-trained transformer labels sentiment as positive, neutral, or negative, offering a practical but non-specialized fit for news text.
 - The NewsAPI free tier limits the number and coverage of retrievable articles.
 
 ## Summary
